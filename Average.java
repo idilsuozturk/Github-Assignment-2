@@ -15,19 +15,4 @@ public class Average
         }
         return newArray;
     }
-
-    public static void main(String[] args) 
-    {
-        int[] a=new int[]{2, 6, 9, 3, 5};
-        for(int i:a)
-        {
-            System.out.print(i+", ");
-        }
-        System.out.println();
-        a=averageDifference(a);
-        for(int i:a)
-        {
-            System.out.print(i+", ");
-        }
-    }
 }
