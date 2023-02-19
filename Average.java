@@ -1,6 +1,6 @@
 public class Average 
 {
-    public static int[] averageDifference(int[] array)
+    public int[] averageDifference(int[] array)
     {
         int average=0;
         for(int i:array)
