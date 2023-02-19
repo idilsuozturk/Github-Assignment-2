@@ -8,6 +8,7 @@ public class Main {
 
         hw1 createarr = new hw1();
         ArrayMinMax m = new ArrayMinMax();
+        ArraySummation s = new ArraySummation();
         int [] arr = createarr.createArray(arrSize);
 
         for (int i = 0; i < arrSize; i++) {
@@ -17,7 +18,8 @@ public class Main {
         System.out.print("\n1-Find min value of the array" +
                            "\n2-Find max value of the array" +
                            "\n3-Display difference from average array" +
-                           "\n4-Find sum of the array" +
+                           "\n4-Find sum of odd index" +
+                           "\n5-Find sum of even index" +
                            "\nPlease enter your choice: ");
         int choice = scan.nextInt();
 
@@ -39,9 +41,13 @@ public class Main {
         }
 
         else if (choice == 4) {
-            
+            System.out.println(s.sumOfOddIndex(arr));
         }
 
+        else if (choice == 5) {
+            System.out.println(s.sumOfEvenIndex(arr));
+        }
+        
         scan.close();
     }
 }
